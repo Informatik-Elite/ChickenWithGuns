@@ -6,7 +6,7 @@ public class Map
 {
     public Map()
     {
-        
+        // Hallo
     }
     public void LoadMap(String pFileName){
 
