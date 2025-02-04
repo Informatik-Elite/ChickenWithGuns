@@ -15,7 +15,6 @@ public class Test
      */
     public Test()
     {
-<<<<<<< HEAD
         // Instanzvariable initialisieren
         x = 0;
     }
@@ -31,8 +30,6 @@ public class Test
         // tragen Sie hier den Code ein
         return x + y;
 
-=======
->>>>>>> f3c4acf76b698d009f88a0ccd7ae1cc8a4f11689
 
     }
 }
