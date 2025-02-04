@@ -1,10 +1,7 @@
 
-/**
- * Beschreiben Sie hier die Klasse Map.
- * 
- * @author (Ihr Name) 
- * @version (eine Versionsnummer oder ein Datum)
- */
+import java.io.File;
+import java.io.FileReader;
+import java.io.BufferedReader;
 public class Map
 {
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
@@ -19,15 +16,22 @@ public class Map
         x = 0;
     }
 
-    /**
-     * Ein Beispiel einer Methode - ersetzen Sie diesen Kommentar mit Ihrem eigenen
-     * 
-     * @param  y    ein Beispielparameter für eine Methode
-     * @return        die Summe aus x und y
-     */
-    public int beispielMethode(int y)
-    {
-        // tragen Sie hier den Code ein
-        return x + y;
+    public void LoadMap(String pFileName){
+
+        File file = new File(pFileName);
+        try 
+        {
+            FileReader fr = new FileReader(file);
+            BufferedReader br = new BufferedReader(fr);
+            String line;
+            while((line = br.readLine()) != null){
+                //process the line
+                System.out.println(line);
+            }
+        }
+        catch( Exception e )
+        {
+            System.out.println("Fehler beim Laden der Datei");
+        }
     }
 }
