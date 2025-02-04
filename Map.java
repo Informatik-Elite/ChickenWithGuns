@@ -4,16 +4,9 @@ import java.io.FileReader;
 import java.io.BufferedReader;
 public class Map
 {
-    // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
-    private int x;
-
-    /**
-     * Konstruktor für Objekte der Klasse Map
-     */
     public Map()
     {
-        // Instanzvariable initialisieren
-        x = 0;
+        
     }
 
     public void LoadMap(String pFileName){
