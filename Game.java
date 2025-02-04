@@ -10,7 +10,7 @@ public class Game
     
     public Game()
     {
-        lw = new SGLeinwand(1296, 864);
+        lw = new SGLeinwand(1620, 900);
     }
     public void Update()
     {
