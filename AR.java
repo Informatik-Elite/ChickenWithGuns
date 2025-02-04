@@ -1,4 +1,3 @@
-
 public class AR
 {
     public AR()

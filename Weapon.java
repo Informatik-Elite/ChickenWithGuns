@@ -1,4 +1,3 @@
-//moin
 
 public class Weapon
 {
