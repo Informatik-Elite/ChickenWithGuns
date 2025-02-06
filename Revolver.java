@@ -1,3 +1,4 @@
+
 import SGE.*;
 public class Revolver extends Weapon
 {
@@ -13,7 +14,7 @@ public class Revolver extends Weapon
     @Override
     public void reload()
     {
-    
+
 
     }
 }
