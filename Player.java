@@ -9,6 +9,7 @@ public class Player
     private double vY;
     private double vX;
     private boolean alive;
+    private Weapon myWeapon;
     
     public Player()
     {
