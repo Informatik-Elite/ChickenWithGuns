@@ -2,11 +2,12 @@
 import java.io.File;
 import java.io.FileReader;
 import java.io.BufferedReader;
+import SGE.*;
 public class Map
 {
     public Map()
     {
-        // Testjjjj
+        LoadMap("levels/Level.1.txt");
     }
     public void LoadMap(String pFileName){
 
@@ -16,9 +17,14 @@ public class Map
             FileReader fr = new FileReader(file);
             BufferedReader br = new BufferedReader(fr);
             String line;
+            int j=0;
             while((line = br.readLine()) != null){
-                //process the line
-                System.out.println(line);
+                char [] arr=line.toCharArray();
+                for(int i=0;i<0;i++){
+                    SGBild temp= new SGBild(18*i,18*j, "tile_"+arr[i] +".png");
+                }
+                j++;
+            
             }
         }
         catch( Exception e )
