@@ -10,19 +10,21 @@ public class Player
     private double vX;
     private boolean alive;
     private Weapon myWeapon;
+    private SGTastatur keyboard;
     
     public Player()
     {
-        
+        keyboard = new SGTastatur();
+        sprite = new SGBild(100,100,"Egg.png");
     }
 
     public void update()
     {
-    
+        
     }
     public void move()
     {
-    
+        
     }
     public void jump()
     {
