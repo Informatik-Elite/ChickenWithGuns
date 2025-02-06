@@ -6,10 +6,10 @@ import SGE.*;
 public class Map
 {
     private List<SGBild> maptiles;
-    public Map()
+    public Map(String pFile)
     {
         maptiles= new List<SGBild>();
-        LoadMap("levels/Level.1.txt");
+        LoadMap(pFile);
     }
 
     public void LoadMap(String pFileName){
@@ -21,16 +21,18 @@ public class Map
             BufferedReader br = new BufferedReader(fr);
             String line;
             int j=0;
-            while((line = br.readLine()) != null){
-                char [] arr=line.toCharArray();
-                for(int i=0;i<0;i++){
-                    if(arr[i]!='0'){
-                        SGBild temp= new SGBild(18*i,18*j, "tile_"+arr[i] +".png");
+            line = br.readLine();
+            while(line != null){
+                char[] arr=line.toCharArray();
+                for(int i=0;i<arr.length;i++){
+                    if(arr[i] != '0'){
+                        
+                        SGBild temp= new SGBild(18*i,18*j, "levels/tile_"+arr[i] +".png");
                         maptiles.append(temp);
                     }
                 }
                 j++;
-
+                line = br.readLine();
             }
         }
         catch( Exception e )

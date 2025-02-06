@@ -11,6 +11,7 @@ public class Game
     public Game()
     {
         lw = new SGLeinwand(1620, 900);
+        map = new Map("levels/Level.1.txt");
     }
     public void Update()
     {
