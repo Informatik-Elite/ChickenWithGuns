@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 /**
  * Beschreiben Sie hier die Klasse AR.
@@ -29,5 +30,23 @@ public class AR
     {
         // tragen Sie hier den Code ein
         return x + y;
+=======
+import SGE.*;
+public class AR extends Weapon
+{
+    public AR()
+    {
+        super();
+    }
+    @Override
+    public void shoot()
+    {
+    
+    }
+    @Override
+    public void reload()
+    {
+    
+>>>>>>> 053a9afd549135779bba7bf50135af7e771e1376
     }
 }

@@ -1,33 +1,41 @@
 
-/**
- * Beschreiben Sie hier die Klasse Map.
- * 
- * @author (Ihr Name) 
- * @version (eine Versionsnummer oder ein Datum)
- */
+import java.io.File;
+import java.io.FileReader;
+import java.io.BufferedReader;
+import SGE.*;
 public class Map
 {
-    // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
-    private int x;
-
-    /**
-     * Konstruktor für Objekte der Klasse Map
-     */
+    private List<SGBild> maptiles;
     public Map()
     {
-        // Instanzvariable initialisieren
-        x = 0;
+        maptiles= new List<SGBild>();
+        LoadMap("levels/Level.1.txt");
     }
 
-    /**
-     * Ein Beispiel einer Methode - ersetzen Sie diesen Kommentar mit Ihrem eigenen
-     * 
-     * @param  y    ein Beispielparameter für eine Methode
-     * @return        die Summe aus x und y
-     */
-    public int beispielMethode(int y)
-    {
-        // tragen Sie hier den Code ein
-        return x + y;
+    public void LoadMap(String pFileName){
+
+        File file = new File(pFileName);
+        try 
+        {
+            FileReader fr = new FileReader(file);
+            BufferedReader br = new BufferedReader(fr);
+            String line;
+            int j=0;
+            while((line = br.readLine()) != null){
+                char [] arr=line.toCharArray();
+                for(int i=0;i<0;i++){
+                    if(arr[i]!='0'){
+                        SGBild temp= new SGBild(18*i,18*j, "tile_"+arr[i] +".png");
+                        maptiles.append(temp);
+                    }
+                }
+                j++;
+
+            }
+        }
+        catch( Exception e )
+        {
+            System.out.println("Fehler beim Laden der Datei");
+        }
     }
 }

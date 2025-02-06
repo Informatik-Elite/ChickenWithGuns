@@ -1,33 +1,17 @@
-
-/**
- * Beschreiben Sie hier die Klasse Projectile.
- * 
- * @author (Ihr Name) 
- * @version (eine Versionsnummer oder ein Datum)
- */
+import SGE.*;
 public class Projectile
 {
-    // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
-    private int x;
-
-    /**
-     * Konstruktor für Objekte der Klasse Projectile
-     */
+    private Player player;
+    private SGBild sprite;
+    private double travel; 
+    private Weapon weapon;
+    
     public Projectile()
     {
-        // Instanzvariable initialisieren
-        x = 0;
+    
     }
-
-    /**
-     * Ein Beispiel einer Methode - ersetzen Sie diesen Kommentar mit Ihrem eigenen
-     * 
-     * @param  y    ein Beispielparameter für eine Methode
-     * @return        die Summe aus x und y
-     */
-    public int beispielMethode(int y)
+    public void Update()
     {
-        // tragen Sie hier den Code ein
-        return x + y;
+        
     }
 }

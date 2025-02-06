@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 /**
  * Beschreiben Sie hier die Klasse Revolver.
@@ -29,5 +30,23 @@ public class Revolver
     {
         // tragen Sie hier den Code ein
         return x + y;
+=======
+import SGE.*;
+public class Revolver extends Weapon
+{
+    public Revolver()
+    {
+        super();
+    }
+    @Override
+    public void shoot()
+    {
+    
+    }
+    @Override
+    public void reload()
+    {
+    
+>>>>>>> 053a9afd549135779bba7bf50135af7e771e1376
     }
 }
